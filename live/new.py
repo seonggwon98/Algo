@@ -1,0 +1,1 @@
+def get_seven_num(r, c, rep, st):
