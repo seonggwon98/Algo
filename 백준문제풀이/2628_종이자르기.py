@@ -1,6 +1,6 @@
 W, L = map(int, input().split())
 cut = int(input())
-width, length = [0, W], [0, L]
+width, length = [0, L], [0, W]
 cut_list = [list(map(int, input().split())) for _ in range(cut)]
 # 먼저 컷 정보 저장
 for i in range(cut):
@@ -17,7 +17,7 @@ for i in range(1, len(width)):
     if max_w < tmp:
         max_w = tmp
 for j in range(1, len(length)):
-    tmp = length[i] - length[i - 1]
+    tmp = length[j] - length[j - 1]
     if max_l < tmp:
         max_l = tmp
 print(max_w * max_l)
